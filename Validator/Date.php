@@ -22,8 +22,6 @@ class Q_Form_Validator_Date extends Q_Form_Validator_Abstract
         $format = str_replace('y', '[0-9]{2}', $format);
         $format = str_replace('Y', '[0-9]{4}', $format);
 
-        echo $format;
-
         return preg_match('!^' . $format . '$!', $this->_value, $m);
     }
 

@@ -25,9 +25,9 @@ class Q_Form_Autoloader
         }
 
         if ($class == 'Q_Form') {
-            $file = dirname(__FILE__) . DS . 'Form.php';
+            $file = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Form.php';
         } else {
-            $file = dirname(dirname(__FILE__))  . DS . str_replace('_', DS, str_replace('Q_', '', $class)) . '.php';
+            $file = dirname(dirname(__FILE__))  . DIRECTORY_SEPARATOR . str_replace('_', DIRECTORY_SEPARATOR, str_replace('Q_', '', $class)) . '.php';
         }
 
         if (file_exists($file)) {
