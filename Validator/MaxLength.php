@@ -21,6 +21,6 @@ class Q_Form_Validator_MaxLength extends Q_Form_Validator_Abstract
 
     public function getError()
     {
-        return 'Значение не должно быть больше ' . $this->_minLength;
+        return 'Кол-во символов не должно быть больше ' . $this->_minLength;
     }
 }
