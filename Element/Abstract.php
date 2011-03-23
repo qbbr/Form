@@ -86,9 +86,6 @@ abstract class Q_Form_Element_Abstract
         $this->_validators[] = $validator;
     }
 
-    /**
-     * @throws Q_Form_Validator_Exception
-     */
     public function isValid()
     {
         $return = true;
